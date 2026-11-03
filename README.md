@@ -1,78 +1,64 @@
-T-Clock Redux
-==============
-<sup>GCC<sup>(MinGW-w64)</sup></sup> [![Build Status](https://travis-ci.org/White-Tiger/T-Clock.svg?branch=yg-master)](https://travis-ci.org/White-Tiger/T-Clock) [![Coverity Status](https://scan.coverity.com/projects/3794/badge.svg)](https://scan.coverity.com/projects/white-tiger-t-clock) <sup>MSVC</sup> [![Build status](https://ci.appveyor.com/api/projects/status/b3qehrl4c8naisx4?svg=true)](https://ci.appveyor.com/project/White-Tiger/t-clock) <sub>(click picture below for full size)</sub>
-![clockshowcase](https://cloud.githubusercontent.com/assets/1467733/4608572/71b48156-5283-11e4-960f-b0415b5b7cec.png)  
-**T-Clock Redux** is an enhanced fork of [Stoic Joker's T-Clock 2010](http://www.stoicjoker.com/TClock/)  
-with ISO week number support, bug fixes and the ability to use Windows' default calendar and tooltips.
+# T-Clock Redux
 
-T-Clock *(called TClock)*, originally written by Kazubon in the early 90's, was a popular classic that was on the edge of extinction when Windows started going 64bit. ... Stoic Joker simply chose not to let that happen. And now it's up to us to continue their efforts.
+A configurable clock for the Windows taskbar. It replaces the clock text with a format you write, and it can open a calendar, alarms, a stopwatch, and timers from the taskbar.
 
-If you don't mind to read lots of text, and want to know more about T-Clock and its history: [check this page out!](http://web.archive.org/web/20160202023839/http://greggdeselms.com/tclock.html) *(thanks Gregg)*
+Version 2.5.0 is the current release. It continues [Stoic Joker's T-Clock 2010](http://www.stoicjoker.com/TClock/) and [White-Tiger's T-Clock Redux](https://github.com/White-Tiger/T-Clock). Kazubon wrote the original T-Clock in the 1990s.
 
+![T-Clock on the taskbar, with its calendar open](https://cloud.githubusercontent.com/assets/1467733/4608572/71b48156-5283-11e4-960f-b0415b5b7cec.png)
 
-### Downloads *(binaries)*
-* [![all releases](https://img.shields.io/badge/ALL-RELEASES-brightgreen.svg?logo=github&style=flat-square) ![](https://img.shields.io/github/downloads/White-Tiger/T-Clock/total.svg?style=flat-square)](//github.com/White-Tiger/T-Clock/releases)
-* [![stable](https://img.shields.io/github/release/White-Tiger/T-Clock.svg?label=STABLE&logo=github&style=flat-square) ![](https://img.shields.io/github/downloads/White-Tiger/T-Clock/latest/total.svg?style=flat-square) ![](https://img.shields.io/github/release-date/White-Tiger/T-Clock.svg?style=flat-square)](//github.com/White-Tiger/T-Clock/releases/latest)
-* [![beta](https://img.shields.io/github/release/White-Tiger/T-Clock/all.svg?label=BETA&logo=github&style=flat-square) ![](https://img.shields.io/github/downloads-pre/White-Tiger/T-Clock/latest/total.svg?style=flat-square) ![](https://img.shields.io/github/release-date-pre/White-Tiger/T-Clock.svg?style=flat-square)](//github.com/White-Tiger/T-Clock/releases)
-* [![nightly](https://img.shields.io/badge/NIGHTLY-for_testing_only-ff69b4.svg?logo=travis&style=flat-square) ![](https://img.shields.io/github/commits-since/White-Tiger/T-Clock/latest.svg?style=flat-square) ![](https://img.shields.io/github/last-commit/White-Tiger/T-Clock.svg?style=flat-square)](//drive.google.com/open?id=1m18Jb-eZya6to3NsXUlZeC2ITjXdM7IU)
+## Download
 
-#### Differences to Stoic Joker's T-Clock 2010 [Build 95/98](http://www.donationcoder.com/forum/index.php?topic=21944.0)
-- [x] + supports Win10 with 1st-Anniversary update *(v2.4.1)*
-- [x] + Unicode support *(v2.4.1)*
-- [x] * improved file structure
-- [x] + ISO-8601 week number support *(Wi)*
-- [x] + original Windows calendar and tooltip usable
-- [x] + support for clocks on every additional taskbar on Win8+
-- [x] + system/user dependent default colors
-- [x] + clock text angle freely adjustable
-- [x] + live update of clock text related changes *(see what happens as you change it and before you apply it)*
-- [x] + clock text always automatically centered
-- [x] + right mouse click can be customized
-- [x] + mouse button 4 and 5 supported
-- [x] * improved taskbar support such as horizontal vs vertical and size
-- [x] + calendar hides on 2nd click if opened before *(autohide must be enabled, Windows default behavior)*
-- [x] + custom calendar can now show X past months, additional improvements
-- [x] + extended right-click menu with more Windows like behavior  
-*(hold down CTRL or SHIFT to get "Run ..." and "Exit Explorer" items)*
-- [x] + simplified mouse click preferences page
-- [x] + default configuration with Windows like behavior and clock with line-break on Vista+ *(easier for first-time users)*
-- [x] + more mouse commands / customization
-- [x] + overall improved settings dialog *(so many changes.. can't name them all)*
-- [x] * improved Stopwatch *(hotkeys, export, stats)*
-- [x] * improved drag&drop support
-- [x] ! some bugfixes
-- [x] * some minor and major rewrites and changes
-- [x] ! can be compiled with MinGW/GCC *(allows more people to work on it and also fixed bugs)*
-- [x] ! fixed clock text transparency issues on Vista+
-- [x] + portable mode using .ini files as configuration storage *(v2.4.0)*
-- [x] + inbuild update checker *(v2.4.0)*
-- [ ] + enhanced time format editor incl. realtime preview *tbd*
-- [ ] + ability to use different timezones on modifiers *tbd*
-- [ ] + LClock formating options such as different fonts and positions for time and date *tbd*
-- [ ] + working timezone identifiers *tbd*
-- [ ] + multilingual version? *tbd*
-- [ ] + resource usage % format option (CPU,RAM maybe GPU) *tbd*
-- [ ] + improved time synchronization incl. autorun at startup (requires admin rights for "install") *tbd*
-- [ ] + mouseover customization, for example different time format, color, border or even current weather *tbd*
-- [ ] + switching clock text, eg. every 2 seconds another one *tbd*
-- [ ] + multiple clock text presets? eg. switch between them on mouse click *tbd*
-- [ ] + maybe current sun state picture as clock background (plugin) *tbd*
-- [ ] + improved hotkey support *tbd*
+**[T-Clock Redux 2.5.0](https://github.com/getprakashkc/T-Clock/releases/latest)**
 
-### Requirements
-* Windows 2000+ *(up to Windows 10 as of 2014)*
+The zip runs without an installer.
 
-### What's that `_vc2010` build?
-* As of 2018, all new releases will be build with GCC instead of the Visual C++ 2010 compiler.
-  So the previously known `_static` builds are used instead and for compatibility reasons,
-  `_vc2010` archives will still use the old compiler and are meant for advanced users.
-* Requires: [Microsoft Visual C++ 2010 Redistributable](http://microsoft.com/en-us/download/details.aspx?id=26999) (install **both** 32bit `vcredist_x86` +  64bit `vcredist_x64` **on 64bit** OS)
+- On 64-bit Windows, start `Clock64.exe`.
+- On 32-bit Windows, start `Clock.exe`.
 
-### Support
-* [Forum](http://donationcoder.com/forum/?board=324)
-* [Issue Tracker](//github.com/White-Tiger/T-Clock/issues)
-* or via email from T-Clock's about screen *(just click on it)*
+Settings, the calendar, sounds, and `T-Clock Help.rtf` are in the same folder. The help file also opens from the format page inside T-Clock.
 
-### License
-* GPLv2 ? *(license is currently unknown, needs further research)*
-~~~~
+## New in 2.5.0
+
+- **Minute time zones.** `W+5:30` and `W-3:30` are hours and minutes. `W+5.5` is five and a half hours, and `W+5.75` is five hours and 45 minutes. `W+5.30` is 5.30 hours (18 minutes), so a half hour is written `W+5:30` or `W+5.5`.
+- **The date follows the zone.** `W+5:30:"yyyy-mm-dd HH:nn"` formats only the quoted text in that zone, and the date rolls after midnight there. A bare `W+5:30` prints the zone hour and keeps the following date and time codes in that zone.
+- **Noon stays 12.** With "Show 12:xx AM as 0:xx" turned on, midnight is 0 and 12:00 PM stays 12.
+- **The hourly chime uses local time.** In a half-hour zone it rings at the local hour, not at half past.
+
+The [format guide](docs/format.md) lists every code.
+
+## What it can do
+
+- Any mix of date, time, uptime, and a second time zone in the taskbar text
+- Clocks on each taskbar
+- The Windows calendar and tooltip, or T-Clock's own calendar
+- Alarms, a stopwatch, and timers
+- Text angle, colors, and mouse actions for each button
+- Portable settings in an `.ini` file next to the program
+- An update check against this repository
+
+## Run
+
+Use it on Windows 7 or later. The 2.5.0 build was started on current Windows. Copy the `Release` folder anywhere you can write, including a USB drive. To make it portable, run `.reset_portable.cmd` once in that folder before the first start.
+
+## Build
+
+The supported build uses MinGW-w64. Install compilers named `i686-w64-mingw32-gcc` and `x86_64-w64-mingw32-gcc`, then from `src/~ide` run:
+
+```
+make -f linux-dll.make release_32 release_64
+make -f linux-clock.make release_32 release_64
+make -f linux-options.make release
+make -f linux-calendar.make release
+```
+
+The programs land in `Release` and `Release/misc`. `Options.exe` and `XPCalendar.exe` are 32-bit programs, which is how this project has always shipped them.
+
+## Support
+
+- [Issues](https://github.com/getprakashkc/T-Clock/issues)
+- [Format guide](docs/format.md)
+- The older community thread is on [DonationCoder](http://donationcoder.com/forum/?board=324)
+
+## License
+
+The program license was left unresolved by the earlier maintainers. The pastel icons under `src/common/icons` are [CC BY-NC-SA 4.0](src/common/icons/license.txt).
